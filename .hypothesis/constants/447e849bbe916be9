@@ -1,0 +1,4 @@
+# file: D:\Payments\models\schemas.py
+# hypothesis_version: 6.151.10
+
+['AMOUNT_MISMATCH', 'COMPLETED', 'DUPLICATE', 'EUR', 'FAILED', 'GBP', 'INR', 'MATCHED', 'ORPHANED_REFUND', 'PENDING', 'REFUNDED', 'TIMING_GAP', 'USD', 'amount']

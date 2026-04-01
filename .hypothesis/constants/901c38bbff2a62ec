@@ -1,0 +1,4 @@
+# file: D:\Payments\generator\generate.py
+# hypothesis_version: 6.151.10
+
+[100, 200, 300, 1000, 2024, 5000, '-150.00', '0.01', 'BATCH-999', 'GHOST-TXN-999', 'Planted gaps:', 'SET-DUPLICATE-001', 'SET-ORPHAN-001', 'TXN-0101', 'TXN-0302', '__main__', 'amount', 'batch_id', 'created_at', 'currency', 'customer_id', 'data/settlements.csv', 'settled_at', 'settlement_id', 'status', 'transaction_id', 'transaction_ref']

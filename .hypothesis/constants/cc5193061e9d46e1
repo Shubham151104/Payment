@@ -1,0 +1,4 @@
+# file: D:\Payments\loader\load.py
+# hypothesis_version: 6.151.10
+
+['0.01', 'amount', 'batch_id', 'created_at', 'currency', 'customer_id', 'data', 'data/recon.duckdb', 'data/settlements.csv', 'net_difference', 'settled_at', 'settlement_count', 'settlement_id', 'settlement_sum', 'status', 'transaction_count', 'transaction_id', 'transaction_ref', 'transaction_sum']

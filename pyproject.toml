@@ -1,0 +1,9 @@
+[project]
+name = "payments-recon"
+version = "0.1.0"
+description = "Zero-error-tolerance payments reconciliation system"
+dependencies = [
+    "pydantic>=2.0.0",
+    "faker>=20.0.0",
+    "pandas>=2.0.0",
+]
