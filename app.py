@@ -8,11 +8,20 @@ and detailed gap analysis.
 import streamlit as st
 import pandas as pd
 from decimal import Decimal
+import sys
 
-from generator.generate import generate_data
-from loader.load import load_data, get_summary
-from engine.reconcile import run_reconciliation
-from models.schemas import GapType
+# Handle missing dependencies gracefully
+try:
+    from generator.generate import generate_data
+    from loader.load import load_data, get_summary
+    from engine.reconcile import run_reconciliation
+    from models.schemas import GapType
+    DEPENDENCIES_AVAILABLE = True
+except ImportError as e:
+    st.error(f"Missing dependency: {e}")
+    st.error("This app requires the full payments reconciliation system to be installed.")
+    st.stop()
+    DEPENDENCIES_AVAILABLE = False
 
 
 @st.cache_resource
@@ -34,6 +43,10 @@ def format_decimal(amount):
 
 
 def main():
+    if not DEPENDENCIES_AVAILABLE:
+        st.error("Cannot run dashboard - missing dependencies")
+        return
+    
     st.set_page_config(page_title="Payments Reconciliation", layout="wide")
     
     with st.spinner("Loading reconciliation data..."):
