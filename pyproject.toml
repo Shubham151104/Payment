@@ -2,11 +2,12 @@
 name = "payments-recon"
 version = "0.1.0"
 description = "Zero-error-tolerance payments reconciliation system"
+requires-python = ">=3.10"
 dependencies = [
     "pydantic>=2.0.0",
     "faker>=20.0.0",
     "pandas>=2.0.0",
-    "duckdb>=1.5.1",
+    "duckdb>=1.0.0",
     "streamlit>=1.56.0",
     "pytest>=9.0.2",
     "hypothesis>=6.151.10",
